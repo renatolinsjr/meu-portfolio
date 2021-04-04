@@ -16,7 +16,7 @@ const Portfolio = ({repos}) => {
               <div className={styles.CardDescription}><p>{description ? description : 'Um projeto feito com muito amor e carinho para testar meus conhecimentos'}</p></div>
               <ul className={styles.CardFooter}>
                 <li><a className={styles.CardLink} href={html_url} target="_blank"><FiGithub style={{ marginRight: '4px'}}/>Código</a></li>
-                {homepage && <li><a className={styles.CardLink} href={`https://${homepage}`} target="_blank"><BiLinkExternal style={{ marginRight: '4px'}}/>Demo</a></li>}
+                {homepage && <li><a className={styles.CardLink} href={homepage} target="_blank"><BiLinkExternal style={{ marginRight: '4px'}}/>Demo</a></li>}
                 <li><a className={styles.CardLink} href={`https://github.com/renatolinsjr/${name}/stargazers`} target="-blank"><BsFillStarFill style={{ marginRight: '4px'}}/>{stars}</a></li>
               </ul>
             </div>
