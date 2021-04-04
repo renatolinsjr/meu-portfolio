@@ -25,5 +25,6 @@ export async function getStaticProps() {
       user,
       repos
     },
+    revalidate: 60,
   }
 }
