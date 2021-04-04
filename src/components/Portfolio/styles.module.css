@@ -1,0 +1,71 @@
+.PortfolioTitle {
+  font-size: var(--font-xl);
+  text-align: center;
+  margin-bottom: var(--spacing-xl);
+}
+
+.Portfolio {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+  gap: 1.6rem;
+  justify-items: center;
+}
+
+.PortfolioCard {
+  display: grid;
+  grid-template-rows: 0.3fr 0.7fr;
+  background-color: var(--secondary);
+  padding: var(--spacing-lg);
+  height: 20rem;
+  max-width: 36rem;
+  width: 100%;
+  border-radius: 0.4rem;
+  transition: background-color .25s ease;
+}
+
+.PortfolioCard:hover {
+  background-color: var(--secondary-hover);
+}
+
+.CardTitle {
+  font-size: 1.6rem;
+}
+
+.CardDescription {
+  font-size: 1.4rem;
+  text-align: left;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical; 
+}
+
+.CardBody {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.CardFooter {
+  display: flex;
+  justify-content: space-between;
+}
+
+.CardLink {
+  font-size: var(--font-sm);
+  font-weight: 700;
+  color: var(--secondary-light);
+  height: 3rem;
+  display: flex;
+  align-items: center;
+}
+
+.CardLink:hover {
+  color: var(--white);
+}
+
+@media (min-width: 768px) {
+  .Portfolio {
+    grid-template-columns: repeat(auto-fit, minmax(36rem, 1fr));
+  }
+}

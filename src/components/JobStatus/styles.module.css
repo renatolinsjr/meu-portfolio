@@ -1,0 +1,5 @@
+.JobStatus {
+  font-size: var(--font-lg);
+  text-align: center;
+  height: 15vh;
+}
