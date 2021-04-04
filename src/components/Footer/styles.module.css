@@ -1,0 +1,21 @@
+.Footer {
+  padding: var(--spacing-xl) 0;
+}
+
+.FooterText {
+  font-size: var(--font-md);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  white-space: pre-wrap;
+  flex-wrap: wrap;
+}
+
+.FooterText > a {
+  color: var(--secondary-light);
+}
+
+.FooterText > a:hover {
+  color: var(--secondary);
+}
