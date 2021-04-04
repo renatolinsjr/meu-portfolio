@@ -8,7 +8,7 @@ export default {
     url: 'https://meu-portfolio.renatolins.dev.br',
     images: [
       {
-        url: 'https://meu-portfolio.renatolins.dev.br/img/cover.png',
+        url: 'https://meu-portfolio.renatolins.dev.br/img/preview.png',
         width: 1280,
         height: 720,
         alt: 'Meu Portfolio - Renato Lins'
