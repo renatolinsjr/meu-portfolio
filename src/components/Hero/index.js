@@ -1,18 +1,16 @@
-import { FaGithub, FaLinkedin } from 'react-icons/fa'
-
 import styles from './styles.module.css'
 
-const Hero = ({user: {avatar, bio, location, name, userUrl}}) => {
+const Hero = () => {
   return (
     <main className={styles.Container}>
       <div className={styles.Hero}>
-        <img className={styles.ProfilePicture} src={avatar} alt="Foto de Renato Lins" />
-        <h1 className={styles.Title}>{name}</h1>
-        <p className={styles.Description}>{location}</p>
-        <p className={styles.Description}>{bio}</p>
+        <img className={styles.ProfilePicture} src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png" alt="Foto de Renato Lins" />
+        <h1 className={styles.Title}>John Doe</h1>
+        <p className={styles.Description}>Rio de Janeiro, RJ</p>
+        <p className={styles.Description}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur explicabo aliquid temporibus sint mollitia est corporis reprehenderit rerum voluptas. Nihil ipsa cupiditate facere nam quod voluptas, illum quas accusamus fuga.</p>
         <ul className={styles.Links}>
-          <li><a href={userUrl} target="_blank"><FaGithub size={40}/></a></li>
-          <li><a href="https://www.linkedin.com/in/renatolinsjr/" target="_blank"><FaLinkedin size={40} /></a></li>
+          <li><a href="#" target="_blank">Github</a></li>
+          <li><a href="https://www.linkedin.com/in/renatolinsjr/" target="_blank">LinkedIn</a></li>
         </ul>
       </div>
     </main>

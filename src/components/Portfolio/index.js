@@ -1,27 +1,21 @@
-import { FiGithub } from 'react-icons/fi'
-import { BiLinkExternal } from 'react-icons/bi'
-import { BsFillStarFill } from 'react-icons/bs'
-
 import styles from './styles.module.css'
 
-const Portfolio = ({repos}) => {
+const Portfolio = () => {
   return (
     <>
       <h1 className={styles.PortfolioTitle}>Projetos Open Source</h1>
       <div className={styles.Portfolio}>
-        {repos.map(({ id, name, description, html_url, homepage, stargazers_count: stars }) => (
-          <div key={id} className={styles.PortfolioCard}>
-            <h2 className={styles.CardTitle}>{name}</h2>
+          <div className={styles.PortfolioCard}>
+            <h2 className={styles.CardTitle}>Título</h2>
             <div className={styles.CardBody}>
-              <div className={styles.CardDescription}><p>{description ? description : 'Um projeto feito com muito amor e carinho para testar meus conhecimentos'}</p></div>
+              <div className={styles.CardDescription}><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, voluptatum.</p></div>
               <ul className={styles.CardFooter}>
-                <li><a className={styles.CardLink} href={html_url} target="_blank"><FiGithub style={{ marginRight: '4px'}}/>Código</a></li>
-                {homepage && <li><a className={styles.CardLink} href={homepage} target="_blank"><BiLinkExternal style={{ marginRight: '4px'}}/>Demo</a></li>}
-                <li><a className={styles.CardLink} href={`https://github.com/renatolinsjr/${name}/stargazers`} target="-blank"><BsFillStarFill style={{ marginRight: '4px'}}/>{stars}</a></li>
+                <li><a className={styles.CardLink} href="#" target="_blank">Código</a></li>
+                <li><a className={styles.CardLink} href="#" target="_blank">Demo</a></li>
+                <li><a className={styles.CardLink} href="#" target="-blank">Estrelas</a></li>
               </ul>
             </div>
           </div>
-        ))}
       </div>
     </>
   )
